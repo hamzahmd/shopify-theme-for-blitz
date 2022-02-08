@@ -26,3 +26,84 @@
   font-size: 16px;
   margin-bottom: 10px;
 }
+
+[data-product-images] {
+  position: relative;
+}
+
+.product-badge {
+  position: absolute;
+  padding: 10px 15px;
+  line-height: 1;
+  border: solid 2px #FFF;
+  border-radius: 30px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+
+.badge-bestseller {
+  background: #f00;
+  top: 15px;
+  left: -8px;
+}
+
+.badge-freeshipping {
+  top: 15px;
+  right: -8px;
+  background: #4eb500;
+  display: flex;
+  align-items: center;
+}
+
+.badge-freeshipping svg {
+  width: 22px;
+  height: 20px;
+  margin-right: 6px;
+  fill: #FFF;
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
+
+.product-block .payment-icons {
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.product-block .free-shipping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: .5px;
+  margin-bottom: 0;
+}
+
+.product-block .free-shipping svg {
+  width: 30px;
+  margin-right: 10px;
+  height: 30px;
+}
+
+.product-block .frequent-badge {
+  margin: 0;
+  display: block;
+  text-align: center;
+  font-family: Avenir,sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 18px;
+  border: 1px solid;
+  padding: 9px 5px;
+  color: #ff5f01;
+  background: #fff2eb;
+  font-weight: 400;
+  letter-spacing: .5px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px !important;
+}
