@@ -6,6 +6,8 @@
     endif
   -%}
 
+  <div class='payment-wrapper-position'></div>
+  <div class="payment-wrapper">
   {%- if enable_dynamic_buttons -%}
     <div class="payment-buttons">
   {%- endif -%}
@@ -40,6 +42,7 @@
   {%- if enable_dynamic_buttons -%}
     </div>
   {%- endif -%}
+  </div>
 
   <div class="shopify-payment-terms product__policies">{{ form | payment_terms }}</div>
 

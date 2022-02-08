@@ -7112,7 +7112,9 @@ lazySizesConfig.expFactor = 4;
         singleOptionSelector: '[data-variant-input]',
         variantColorSwatch: '.variant__input--color-swatch',
   
-        availabilityContainer: '[data-store-availability-holder]'
+        availabilityContainer: '[data-store-availability-holder]',
+        paymentWrapper: '.product-single__form .payment-wrapper',
+        paymentWrapperPositionHandler: '.product-single__form .payment-wrapper-position'
       };
   
       this.cacheElements();
@@ -7151,6 +7153,10 @@ lazySizesConfig.expFactor = 4;
         // Quick add hook
         window.off('quickadd:loaded:' + this.sectionId);
         window.on('quickadd:loaded:' + this.sectionId, this.initQuickAddForm.bind(this));
+
+        // Sticky Add to cart Event Define
+        window.on('scroll', this.adjustPaymentWrapperPosition.bind(this));
+
       },
   
       cacheElements: function() {
@@ -8167,6 +8173,21 @@ lazySizesConfig.expFactor = 4;
   
         if (this.flickity && typeof this.flickity.destroy === 'function') {
           this.flickity.destroy();
+        }
+      },
+
+      /*============================================================================
+        Custom - Payment wrapper sticky
+      ==============================================================================*/
+      adjustPaymentWrapperPosition: function(evt) {
+        var paymentWrapper = document.querySelector(this.selectors.paymentWrapper);
+        var paymentWrapperPositionHandler = document.querySelector(this.selectors.paymentWrapperPositionHandler);
+
+        if(paymentWrapperPositionHandler.offsetTop < window.scrollY + window.innerHeight - paymentWrapper.offsetHeight) {
+          paymentWrapper.classList.add("sticky");
+        }
+        else {
+          paymentWrapper.classList.remove("sticky");
         }
       }
     });
