@@ -15,7 +15,9 @@
     </div>
   </header>
 
-  {%- if cart.item_count > 0 -%}
+	<script src="https://cdn.customily.com/shopify/static/customily.shopify.script.unified.js"></script>
+
+	{%- if cart.item_count > 0 -%}
     <form action="{{ routes.cart_url }}" method="post" novalidate data-location="page" id="CartPageForm">
       <div class="cart__page">
         <div class="cart__page-col">
