@@ -7155,7 +7155,9 @@ lazySizesConfig.expFactor = 4;
         window.on('quickadd:loaded:' + this.sectionId, this.initQuickAddForm.bind(this));
 
         // Sticky Add to cart Event Define
-        window.on('scroll', this.adjustPaymentWrapperPosition.bind(this));
+        if(window.innerWidth < 768) {
+          window.on('scroll', this.adjustPaymentWrapperPosition.bind(this));
+        }
 
       },
   
