@@ -25,6 +25,10 @@
   endcase
 -%}
 
+<script src="https://cdn.customily.com/customily.js"></script>
+<script src="https://cdn.customily.com/shopify/static/customily.shopify.script.unified.js"></script>
+
+
 <div id="ProductSection-{{ section_id }}-{{ product.id }}"
   class="product-section"
   data-section-id="{{ section_id }}"
@@ -112,9 +116,6 @@
             <div class="product-block product-block--header product-single__header small--hide">
               {{ product_header }}
             </div>
-
-			  <script src="https://cdn.customily.com/customily.js"></script>
-			  <script src="https://cdn.customily.com/shopify/static/customily.shopify.script.unified.js"></script>
 
             <div data-product-blocks>
               {%- capture form_id -%}AddToCartForm-{{ section_id }}-{{ product.id }}{%- endcapture -%}
