@@ -23,6 +23,7 @@
         },
         "sales_point3": {
           "type": "sales_point",
+          "disabled": true,
           "settings": {
             "icon": "checkmark",
             "text": "Unique, One-of-a-kind gift"
@@ -30,6 +31,7 @@
         },
         "sales_point4": {
           "type": "sales_point",
+          "disabled": true,
           "settings": {
             "icon": "package",
             "text": "Made in USA"
@@ -37,6 +39,7 @@
         },
         "sales_point": {
           "type": "sales_point",
+          "disabled": true,
           "settings": {
             "icon": "globe",
             "text": "Free worldwide shipping"
@@ -44,6 +47,7 @@
         },
         "inventory_status": {
           "type": "inventory_status",
+          "disabled": true,
           "settings": {
             "inventory_threshold": 10,
             "inventory_transfers_enable": true
