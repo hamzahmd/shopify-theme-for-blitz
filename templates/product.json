@@ -71,6 +71,11 @@
           "settings": {
           }
         },
+        "e79891d9-c654-4ab2-b646-1d0d591d3942": {
+          "type": "subscription_table",
+          "settings": {
+          }
+        },
         "14197c06-9d8d-4b8a-ad04-d820e5375ca4": {
           "type": "description",
           "settings": {
@@ -98,6 +103,7 @@
         "a06d1556-189e-40e8-8fc6-c89790609b36",
         "da41f6e1-971b-427c-bb9e-e9f3c8634d42",
         "a013c8a9-47e3-41ef-aaf0-b347c860a83e",
+        "e79891d9-c654-4ab2-b646-1d0d591d3942",
         "14197c06-9d8d-4b8a-ad04-d820e5375ca4",
         "1b05ed06-fec1-49de-b112-8a5aa78f541a"
       ],
