@@ -1,16 +1,4 @@
 {%- form 'product', product, id: form_id, class: 'product-single__form' -%}
-
-  {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-    <div class="product__policies rte">
-      {%- if shop.taxes_included -%}
-        {{ 'products.product.include_taxes' | t }}
-      {%- endif -%}
-      {%- if shop.shipping_policy.body != blank -%}
-        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-      {%- endif -%}
-    </div>
-  {%- endif -%}
-
   {%- liquid
     assign enable_dynamic_buttons = false
     if show_dynamic_checkout and template != 'product.preorder'
