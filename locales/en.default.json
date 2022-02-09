@@ -348,8 +348,8 @@
       "volumn_discount": {
         "any_2_items": "Any 2 items",
         "any_3_items": "Any 3 items",
-        "off_5_percent_html": "Get <strong class='red'>5%</strong> off",
-        "off_10_percent_html": "Get <strong class='red'>10%</strong> off",
+        "off_5_percent_html": "Get <strong class='red'>5%<\/strong> off",
+        "off_10_percent_html": "Get <strong class='red'>10%<\/strong> off",
         "buy_more_save_more": "Buy more save more!"
       },
       "badge": {
