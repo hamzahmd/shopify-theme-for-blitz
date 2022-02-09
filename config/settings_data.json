@@ -59,7 +59,7 @@
     "collection_grid_image": "collection",
     "collection_grid_image_margin": 0,
     "cart_type": "page",
-    "cart_additional_buttons": false,
+    "cart_additional_buttons": true,
     "cart_notes_enable": false,
     "cart_terms_conditions_enable": false,
     "share_facebook": false,
