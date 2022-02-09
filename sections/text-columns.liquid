@@ -69,9 +69,11 @@
       {%- endfor -%}
     </div>
 
+    {% if section.settings.button_text %}
     <div class="button-wrapper text-center">
       <a href="{{section.settings.button_url}}" class="btn section_button"> {{section.settings.button_text}} </a>
     </div>
+    {% endif %}
   </div>
 </div>
 {%- if section.settings.divider -%}</div>{%- endif -%}
