@@ -119,7 +119,7 @@
         "product_zoom_enable": true,
         "thumbnail_position": "below",
         "thumbnail_arrows": false,
-        "mobile_layout": "partial",
+        "mobile_layout": "full",
         "enable_video_looping": true,
         "product_video_style": "muted"
       }
