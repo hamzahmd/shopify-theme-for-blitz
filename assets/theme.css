@@ -9569,7 +9569,7 @@ iframe.zoid-component-frame{
 }
 
 .product-single__meta{
-  padding-top:65px;
+  padding-top:0;
   padding-left:45px
 }
 
@@ -9620,7 +9620,7 @@ html[dir=rtl] .product-single__meta .rte{
 }
 
 .product-single__title{
-  margin-bottom:10px;
+  margin-bottom:24px;
   word-wrap:break-word;
 }
 

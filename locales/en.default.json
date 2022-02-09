@@ -344,16 +344,17 @@
       "waiting_for_stock": "Inventory on the way",
       "view_in_space": "View in your space",
       "view_in_space_label": "View in your space, loads item in augmented reality window",
+      "freeshipping_USA": "Free Shipping within USA",
       "volumn_discount": {
         "any_2_items": "Any 2 items",
-        "any_3_items": "Any 2 items",
-        "off_5_percent": "Get 5% off",
-        "off_10_percent": "Get 10% off",
+        "any_3_items": "Any 3 items",
+        "off_5_percent_html": "Get <strong class='red'>5%</strong> off",
+        "off_10_percent_html": "Get <strong class='red'>10%</strong> off",
         "buy_more_save_more": "Buy more save more!"
       },
       "badge": {
         "bestseller": "Bestseller",
-        "freeshipping": "Free Shipping within USA",
+        "freeshipping": "Free Shipping",
         "frequent": "Hurry! We sell out frequently"
       }
     }
