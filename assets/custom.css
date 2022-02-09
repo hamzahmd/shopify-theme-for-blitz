@@ -45,12 +45,12 @@
 }
 
 .badge-bestseller {
-  top: 2px;
+  top: -14px;
   left: -8px;
 }
 
 .badge-freeshipping {
-  top: 2px;
+  top: -14px;
   right: -8px;
   display: flex;
   align-items: center;
@@ -116,4 +116,13 @@
   z-index: 100;
   left: 0;
   background: #FFF;
+}
+
+.collection-image img {
+  border-radius: 20px;
+}
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 10px;
 }
