@@ -68,6 +68,10 @@
         </div>
       {%- endfor -%}
     </div>
+
+    <div class="button-wrapper text-center">
+      <a href="{{section.settings.button_url}}" class="btn section_button"> {{section.settings.button_text}} </a>
+    </div>
   </div>
 </div>
 {%- if section.settings.divider -%}</div>{%- endif -%}
@@ -130,6 +134,16 @@
             "label": "3"
           }
         ]
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Section Button URL"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Section Button Text"
       }
     ],
     "blocks": [
