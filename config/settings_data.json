@@ -275,7 +275,7 @@
           "c296bc3e-1d7f-4750-b993-050176521596"
         ],
         "settings": {
-          "show_newsletter": true,
+          "show_newsletter": false,
           "newsletter_richtext": "<p>Subscribe today and get 10% off your first purchase<\/p>",
           "footer_main_menu": true,
           "show_copyright": true,
