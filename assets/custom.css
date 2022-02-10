@@ -116,6 +116,7 @@
   z-index: 100;
   left: 0;
   background: #FFF;
+  padding: 10px 20px;
 }
 
 .collection-image img {
@@ -177,10 +178,16 @@
   display:none !important;
 }
 
-.header-section {
-  padding-bottom: 10px;
-}
-
 .product-single__title {
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .scrollable-grid--small .grid-item {
+    flex: 0 0 85%;
+  }
+
+  .header-section {
+    padding-bottom: 10px;
+  }
 }

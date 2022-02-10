@@ -86,11 +86,6 @@
 
   <div class="page-content page-content--product">
     <div class="page-width">
-
-      <div class="product-single__header--mobile medium-up--hide">
-        {{ product_header }}
-      </div>
-
       <div class="product-grid__container grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
         {%- if image_position == 'left' -%}
           <div class="grid__item {{ product_image_width }} product-single__sticky">
@@ -113,7 +108,7 @@
         <div class="product-grid__content product-single__sticky grid__item {{ product_description_width }}">
 
           <div class="product-single__meta">
-            <div class="product-block product-block--header product-single__header small--hide">
+            <div class="product-block product-block--header product-single__header">
               {{ product_header }}
             </div>
 
