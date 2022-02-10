@@ -47,6 +47,7 @@
     "icon_linecaps": "round",
     "superscript_decimals": true,
     "product_save_amount": false,
+    "product_save_type": "dollar",
     "quick_shop_enable": false,
     "quick_add_enable": false,
     "product_grid_image_size": "natural",
@@ -126,11 +127,11 @@
       "newsletter-popup": {
         "type": "newsletter-popup",
         "settings": {
-          "mode": "enabled",
+          "mode": "disabled",
           "popup_seconds": 5,
           "popup_days": 30,
           "popup_title": "Save 10% off your first purchase",
-          "popup_text": "<p>Sign up today and we&#x27;ll send you a 10% discount code towards your first purchase.<\/p>",
+          "popup_text": "<p>Sign up today and we'll send you a 10% discount code towards your first purchase.<\/p>",
           "color_scheme": "3",
           "enable_newsletter": true,
           "button_label": "Optional button",
@@ -275,7 +276,7 @@
           "c296bc3e-1d7f-4750-b993-050176521596"
         ],
         "settings": {
-          "show_newsletter": true,
+          "show_newsletter": false,
           "newsletter_richtext": "<p>Subscribe today and get 10% off your first purchase<\/p>",
           "footer_main_menu": true,
           "show_copyright": true,

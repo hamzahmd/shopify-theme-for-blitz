@@ -165,9 +165,27 @@
         "product_recommendations_heading": "You may also like"
       }
     },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "disabled": true,
+      "settings": {
+      }
+    },
     "recently-viewed": {
       "type": "recently-viewed",
       "settings": {
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {
+        "color_scheme": "2"
       }
     },
     "16441131066e711568": {
@@ -191,17 +209,17 @@
         "space_around": true
       }
     },
-    "1644479565b2ad8225": {
+    "16444793227035a646": {
       "type": "faq",
       "blocks": {
-        "1644479565b24a8d30-0": {
+        "16444793222d44c153-0": {
           "type": "question",
           "settings": {
             "title": "Frequently asked question",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
         },
-        "1644479565b24a8d30-1": {
+        "16444793222d44c153-1": {
           "type": "question",
           "settings": {
             "title": "Frequently asked question",
@@ -210,30 +228,11 @@
         }
       },
       "block_order": [
-        "1644479565b24a8d30-0",
-        "1644479565b24a8d30-1"
+        "16444793222d44c153-0",
+        "16444793222d44c153-1"
       ],
       "settings": {
         "title": "Frequently asked questions"
-      }
-    },
-    "more-products-vendor": {
-      "type": "more-products-vendor",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "more-products-collection": {
-      "type": "more-products-collection",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "collection-return": {
-      "type": "collection-return",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "2"
       }
     }
   },
@@ -241,11 +240,11 @@
     "main",
     "sub",
     "recommendations",
-    "recently-viewed",
-    "16441131066e711568",
-    "1644479565b2ad8225",
     "more-products-vendor",
     "more-products-collection",
-    "collection-return"
+    "recently-viewed",
+    "collection-return",
+    "16441131066e711568",
+    "16444793227035a646"
   ]
 }
