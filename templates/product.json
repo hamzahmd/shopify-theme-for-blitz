@@ -13,6 +13,13 @@
           "settings": {
           }
         },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -43,14 +50,6 @@
           "settings": {
             "icon": "globe",
             "text": "Free worldwide shipping"
-          }
-        },
-        "inventory_status": {
-          "type": "inventory_status",
-          "disabled": true,
-          "settings": {
-            "inventory_threshold": 10,
-            "inventory_transfers_enable": true
           }
         },
         "buy_buttons": {
@@ -98,11 +97,11 @@
       "block_order": [
         "loox-rating",
         "price",
+        "inventory_status",
         "variant_picker",
         "sales_point3",
         "sales_point4",
         "sales_point",
-        "inventory_status",
         "buy_buttons",
         "a06d1556-189e-40e8-8fc6-c89790609b36",
         "da41f6e1-971b-427c-bb9e-e9f3c8634d42",
