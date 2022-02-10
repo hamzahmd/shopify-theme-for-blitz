@@ -47,7 +47,6 @@
         },
         "inventory_status": {
           "type": "inventory_status",
-          "disabled": true,
           "settings": {
             "inventory_threshold": 10,
             "inventory_transfers_enable": true
