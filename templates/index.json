@@ -20,28 +20,10 @@
             "focal_point": "center center",
             "color_scheme": "none"
           }
-        },
-        "slideshow-split-1": {
-          "type": "slide",
-          "settings": {
-            "top_subheading": "",
-            "title": "Side by Side Slide",
-            "title_size": 60,
-            "subheading": "Add optional subtext",
-            "link": "",
-            "link_text": "Optional button",
-            "link_2": "",
-            "link_text_2": "",
-            "text_position": "left",
-            "indent_image": false,
-            "focal_point": "center center",
-            "color_scheme": "2"
-          }
         }
       },
       "block_order": [
-        "slideshow-split-0",
-        "slideshow-split-1"
+        "slideshow-split-0"
       ],
       "settings": {
         "full_width": false,
