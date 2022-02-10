@@ -207,3 +207,29 @@
   margin-top: 14px;
   text-transform: capitalize;
 }
+
+.green {
+  color: #54c63a;
+}
+
+.coupon_code_badge {
+  padding: 20px;
+  display: grid;
+  background: #faffcf;
+  position: relative;
+  text-align: center;
+}
+
+.coupon_code_badge:before {
+  content: "";
+  border: dashed 2px;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+}
+
+.coupon_code_badge span {
+  font-weight: 600;
+}

@@ -408,9 +408,7 @@
                   {%- when 'coupon_code_badge' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       <div class="coupon_code_badge">
-                        {% assign discount_amount = block.settings.discount_amount %}
-                        {% assign coupon_code = block.settings.coupon_code %}
-                        {{'products.product.badge.coupon_html' | t}}
+                        {{'products.product.badge.coupon_html' | t: discount_amount: block.settings.discount_amount, coupon_code: block.settings.coupon_code }}
                       </div>
                     </div>
                 {%- endcase -%}
