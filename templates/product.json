@@ -52,6 +52,13 @@
             "surface_pickup_enable": false
           }
         },
+        "e03a1256-b1e2-4295-9835-83a4e55f9ed7": {
+          "type": "coupon_code_badge",
+          "settings": {
+            "discount_amount": "15%",
+            "coupon_code": "ROSE"
+          }
+        },
         "a06d1556-189e-40e8-8fc6-c89790609b36": {
           "type": "payment-icons",
           "settings": {
@@ -95,6 +102,7 @@
         "sales_point4",
         "sales_point",
         "buy_buttons",
+        "e03a1256-b1e2-4295-9835-83a4e55f9ed7",
         "a06d1556-189e-40e8-8fc6-c89790609b36",
         "da41f6e1-971b-427c-bb9e-e9f3c8634d42",
         "a013c8a9-47e3-41ef-aaf0-b347c860a83e",
