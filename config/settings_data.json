@@ -126,11 +126,11 @@
       "newsletter-popup": {
         "type": "newsletter-popup",
         "settings": {
-          "mode": "enabled",
+          "mode": "disabled",
           "popup_seconds": 5,
           "popup_days": 30,
           "popup_title": "Save 10% off your first purchase",
-          "popup_text": "<p>Sign up today and we&#x27;ll send you a 10% discount code towards your first purchase.<\/p>",
+          "popup_text": "<p>Sign up today and we'll send you a 10% discount code towards your first purchase.<\/p>",
           "color_scheme": "3",
           "enable_newsletter": true,
           "button_label": "Optional button",
