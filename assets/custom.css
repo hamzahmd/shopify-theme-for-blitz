@@ -182,6 +182,15 @@
   margin-bottom: 20px;
 }
 
+.product__price-savings {
+  background: rgb(186, 68, 68);
+  color: #FFF;
+  padding: 7px 20px;
+  line-height: 0;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
 @media only screen and (max-width: 768px) {
   .scrollable-grid--small .grid-item {
     flex: 0 0 85%;
@@ -190,4 +199,11 @@
   .header-section {
     padding-bottom: 10px;
   }
+}
+
+.product-block--price .sales-points {
+  float: right;
+  color: #54c63a;
+  margin-top: 14px;
+  text-transform: capitalize;
 }

@@ -202,7 +202,11 @@
                         {%- endif -%}
                         <span data-save-price class="product__price-savings{% if hide_sale_price %} hide{% endif %}">
                           {%- unless hide_sale_price -%}
-                            {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+                            {%- if settings.product_save_type == 'dollar' -%}
+                              {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+                            {%- else -%}
+                              {{ 'products.general.save_percent_html' | t: saved_amount: saved_amount }}
+                            {%- endif -%}
                           {%- endunless -%}
                         </span>
                       {%- endif -%}
@@ -223,6 +227,8 @@
                           {%- render 'price' with current_variant.unit_price -%}
                         </span>/{{ unit_price_base_unit }}
                       </div>
+                      
+                      {%- render 'product-inventory', product: product, current_variant: current_variant, block: block -%}
                     </div>
                   {%- when 'quantity_selector' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>

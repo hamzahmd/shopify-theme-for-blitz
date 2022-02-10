@@ -314,6 +314,7 @@
     "general": {
       "color_swatch_trigger": "Color",
       "save_html": "Save {{ saved_amount }}",
+      "save_percent_html": "{{ saved_amount }} off",
       "collection_return": "Back to {{ collection }}",
       "next_product": "Next: {{ title }}",
       "sale": "Sale",
@@ -327,7 +328,7 @@
     },
     "product": {
       "description": "Description",
-      "in_stock_label": "In stock, ready to ship",
+      "in_stock_label": "In stock now!",
       "stock_label": {
         "one": "Low stock - {{ count }} item left",
         "other": "Low stock - {{ count }} items left"
