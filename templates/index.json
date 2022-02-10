@@ -175,7 +175,7 @@
         "title": "Gifts for Daughter",
         "home_featured_products": "gifts-for-daughter",
         "count": 5,
-        "mobile_scrollable": false,
+        "mobile_scrollable": true,
         "view_all": true,
         "divider": false
       }
