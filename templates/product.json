@@ -85,6 +85,12 @@
             "content": "",
             "page": ""
           }
+        },
+        "d0ef4b03-3fdf-4a49-8355-a789f97e9ab3": {
+          "type": "custom",
+          "settings": {
+            "code": "<h4>Custom code block<\/h4><p>Use this advanced section to add custom HTML, app scripts, or liquid.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -100,7 +106,8 @@
         "a013c8a9-47e3-41ef-aaf0-b347c860a83e",
         "e79891d9-c654-4ab2-b646-1d0d591d3942",
         "14197c06-9d8d-4b8a-ad04-d820e5375ca4",
-        "1b05ed06-fec1-49de-b112-8a5aa78f541a"
+        "1b05ed06-fec1-49de-b112-8a5aa78f541a",
+        "d0ef4b03-3fdf-4a49-8355-a789f97e9ab3"
       ],
       "settings": {
         "sku_enable": false,
@@ -244,6 +251,8 @@
         "loox-product-reviews"
       ],
       "settings": {
+        "full_width": false,
+        "space_around": true
       }
     }
   },
