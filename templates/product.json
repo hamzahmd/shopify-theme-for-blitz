@@ -191,25 +191,6 @@
         "space_around": true
       }
     },
-    "more-products-vendor": {
-      "type": "more-products-vendor",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "more-products-collection": {
-      "type": "more-products-collection",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "collection-return": {
-      "type": "collection-return",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "2"
-      }
-    },
     "1644479565b2ad8225": {
       "type": "faq",
       "blocks": {
@@ -235,6 +216,25 @@
       "settings": {
         "title": "FAQs"
       }
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "2"
+      }
     }
   },
   "order": [
@@ -243,9 +243,9 @@
     "recommendations",
     "recently-viewed",
     "16441131066e711568",
+    "1644479565b2ad8225",
     "more-products-vendor",
     "more-products-collection",
-    "collection-return",
-    "1644479565b2ad8225"
+    "collection-return"
   ]
 }
