@@ -132,7 +132,23 @@
                   {%- when 'tab' -%}
                     <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
                       {% assign tab_id = block.id | append: product.id %}
+                      {% if block.settings.title contains 'Shipping information' %}
+                        {% assign has_delivery_estimate = 0 %}
+                        {% for col in product.collections %}
+                          {% if col.metafields.my_fields.deliver_period != blank %}
+                            {% assign has_delivery_estimate = 1 %}
+                            {% assign delivery_period = col.metafields.my_fields.deliver_period | split: '~' %}
+                            {% assign plus_min = delivery_period[0] | times: 24 | times: 3600 %}
+                            {% assign plus_max = delivery_period[1] | times: 24 | times: 3600 %}
+                            {% assign due_date1 = "now" | date: "%s" | plus: plus_min | date: "%b %d" %}
+                            {% assign due_date2 = "now" | date: "%s" | plus: plus_max | date: "%b %d" %}
+                          {% endif %}
+                        {% endfor %}
+                      {% endif %}
                       {% capture tab_content %}
+                        {% if block.settings.title contains 'Shipping information' and has_delivery_estimate == 1 %}
+                          <img src="https://cdn.shopify.com/s/files/1/0543/4549/8809/files/shipping_25x.png" style="transform: translateY(3px);" /> Arrives by <u class='red'><strong>{{due_date1}} - {{due_date2}}</strong></u> if you order today. </p>
+                        {% endif %}
                         {{ block.settings.content }}
                         {{ block.settings.page.content }}
                       {% endcapture %}

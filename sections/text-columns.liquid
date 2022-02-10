@@ -1,6 +1,6 @@
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
-<div class="index-section color-scheme-{{ section.settings.color_scheme }}">
+<div class="index-section color-scheme-{{ section.settings.color_scheme }} section-text-columns">
   {%- if section.settings.color_scheme != 'none' -%}
     {%- render 'color-scheme-texture', color_scheme: section.settings.color_scheme -%}
   {%- endif -%}
@@ -32,7 +32,7 @@
         {%- endif -%}
         <div class="grid__item {{ column_width }} text-{{ section.settings.align_text }}" {{ block.shopify_attributes }}>
           {%- if block.settings.enable_image -%}
-            <div style="{% if section.settings.align_text == 'center' %}margin: 0 auto;{% endif %} max-width: {{ block.settings.image_width }}px;">
+            <div style="{% if section.settings.align_text == 'center' %}margin: 0 auto;{% endif %} max-width: {{ block.settings.image_width }}px;" class="item-image">
               {%- if block.settings.button_link != blank -%}
                 <a href="{{ block.settings.button_link }}">
               {%- endif -%}
@@ -54,17 +54,20 @@
               {%- endif -%}
             </div>
           {%- endif -%}
-          {%- if block.settings.title != blank -%}
-            <div class="h3 rte--block">{{ block.settings.title }}</div>
-          {%- endif -%}
-          {%- if block.settings.text != blank -%}
-            <div class="rte-setting rte--block text-spacing">{{ block.settings.text }}</div>
-          {%- endif -%}
-          {%- if block.settings.button_label != blank -%}
-            <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
-              {{ block.settings.button_label }}
-            </a>
-          {%- endif -%}
+
+          <div class="item-content">
+            {%- if block.settings.title != blank -%}
+              <div class="h3 rte--block">{{ block.settings.title }}</div>
+            {%- endif -%}
+            {%- if block.settings.text != blank -%}
+              <div class="rte-setting rte--block text-spacing">{{ block.settings.text }}</div>
+            {%- endif -%}
+            {%- if block.settings.button_label != blank -%}
+              <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
+                {{ block.settings.button_label }}
+              </a>
+            {%- endif -%}
+          </div>
         </div>
       {%- endfor -%}
     </div>

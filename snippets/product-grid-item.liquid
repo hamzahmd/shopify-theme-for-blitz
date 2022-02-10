@@ -254,14 +254,14 @@
         <div class="grid-item__meta-secondary">
           <div class="grid-product__price">
             {%- if product.price_varies -%}
-              <span class="grid-product__price--current">
+              <span class="grid-product__price--current red">
                 {%- render 'price-varies', price: product.price_min -%}
               </span>
             {%- else -%}
               {%- if on_sale -%}
                 <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
               {%- endif -%}
-              <span class="grid-product__price--current">
+              <span class="grid-product__price--current red">
                 {%- render 'price' with product.price -%}
               </span>
             {%- endif -%}
