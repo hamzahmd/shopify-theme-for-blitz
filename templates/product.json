@@ -13,6 +13,12 @@
           "settings": {
           }
         },
+        "d0ef4b03-3fdf-4a49-8355-a789f97e9ab3": {
+          "type": "custom",
+          "settings": {
+            "code": "<div id=\"looxReviews\" data-product-id=\"{{product.id}}\" class=\"loox-reviews-default\">{{ product.metafields.loox.reviews }}<\/div><br>"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -85,17 +91,12 @@
             "content": "",
             "page": ""
           }
-        },
-        "d0ef4b03-3fdf-4a49-8355-a789f97e9ab3": {
-          "type": "custom",
-          "settings": {
-            "code": "<h4>Custom code block<\/h4><p>Use this advanced section to add custom HTML, app scripts, or liquid.<\/p>"
-          }
         }
       },
       "block_order": [
         "price",
         "loox-rating",
+        "d0ef4b03-3fdf-4a49-8355-a789f97e9ab3",
         "variant_picker",
         "sales_point3",
         "sales_point4",
@@ -106,8 +107,7 @@
         "a013c8a9-47e3-41ef-aaf0-b347c860a83e",
         "e79891d9-c654-4ab2-b646-1d0d591d3942",
         "14197c06-9d8d-4b8a-ad04-d820e5375ca4",
-        "1b05ed06-fec1-49de-b112-8a5aa78f541a",
-        "d0ef4b03-3fdf-4a49-8355-a789f97e9ab3"
+        "1b05ed06-fec1-49de-b112-8a5aa78f541a"
       ],
       "settings": {
         "sku_enable": false,
