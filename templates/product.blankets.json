@@ -209,25 +209,30 @@
         "space_around": true
       }
     },
-    "loox-product-reviews-app-section": {
-      "type": "apps",
+    "16444793227035a646": {
+      "type": "faq",
       "blocks": {
-        "loox-product-reviews": {
-          "type": "shopify:\/\/apps\/loox-photo-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+        "16444793222d44c153-0": {
+          "type": "question",
           "settings": {
-            "only_photos": false,
-            "aggregated": false,
-            "hide_thumbnails": false,
-            "maxwidth": 1080
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "16444793222d44c153-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
         }
       },
       "block_order": [
-        "loox-product-reviews"
+        "16444793222d44c153-0",
+        "16444793222d44c153-1"
       ],
       "settings": {
-        "full_width": false,
-        "space_around": true
+        "title": "Frequently asked questions"
       }
     }
   },
@@ -240,6 +245,6 @@
     "recently-viewed",
     "collection-return",
     "16441131066e711568",
-    "loox-product-reviews-app-section"
+    "16444793227035a646"
   ]
 }
