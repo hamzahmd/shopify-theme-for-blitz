@@ -227,7 +227,7 @@
                           {%- render 'price' with current_variant.unit_price -%}
                         </span>/{{ unit_price_base_unit }}
                       </div>
-                      
+
                       {%- render 'product-inventory', product: product, current_variant: current_variant, block: block -%}
                     </div>
                   {%- when 'quantity_selector' -%}
@@ -404,6 +404,14 @@
                   {%- when 'frequent_badge' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       <div class="frequent-badge"> {{ 'products.product.badge.frequent' | t }} </div>
+                    </div>
+                  {%- when 'coupon_code_badge' -%}
+                    <div class="product-block" {{ block.shopify_attributes }}>
+                      <div class="coupon_code_badge">
+                        {% assign discount_amount = block.settings.discount_amount %}
+                        {% assign coupon_code = block.settings.coupon_code %}
+                        {{products.product.badge.coupon_html | t}}
+                      </div>
                     </div>
                 {%- endcase -%}
               {%- else -%}

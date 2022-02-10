@@ -356,7 +356,8 @@
       "badge": {
         "bestseller": "Bestseller",
         "freeshipping": "Free Shipping",
-        "frequent": "Hurry! We sell out frequently"
+        "frequent": "Hurry! We sell out frequently",
+        "coupon_html": "<span>Get an extra {{discount_amount}} off! Use code: {{coupon_code}}</span><small>(enter code at checkout)</small>"
       }
     }
   },
