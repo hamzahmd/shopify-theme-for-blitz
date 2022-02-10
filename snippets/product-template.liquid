@@ -410,7 +410,7 @@
                       <div class="coupon_code_badge">
                         {% assign discount_amount = block.settings.discount_amount %}
                         {% assign coupon_code = block.settings.coupon_code %}
-                        {{products.product.badge.coupon_html | t}}
+                        {{'products.product.badge.coupon_html' | t}}
                       </div>
                     </div>
                 {%- endcase -%}
