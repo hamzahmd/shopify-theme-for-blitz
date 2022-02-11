@@ -8185,9 +8185,11 @@ lazySizesConfig.expFactor = 4;
         if(window.innerWidth < 768) {
           if(paymentWrapperPositionHandler.offsetTop < window.scrollY - paymentWrapper.offsetHeight) {
             paymentWrapper.classList.add("sticky");
+            paymentWrapperPositionHandler.style.height = paymentWrapper.offsetHeight + "px";
           }
           else {
             paymentWrapper.classList.remove("sticky");
+            paymentWrapperPositionHandler.style.height = 0;
           }
         }
         else {
