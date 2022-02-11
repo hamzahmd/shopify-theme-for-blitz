@@ -1,6 +1,13 @@
 .product__price.on-sale {
-  color: #ba4444;
-  font-size: 1.8em;
+  color: rgb(28, 29, 29);
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.product__price--compare {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #999;
 }
 
 .subscription_table {
@@ -206,6 +213,7 @@
   color: #54c63a;
   margin-top: 14px;
   text-transform: capitalize;
+  font-size: 16px;
 }
 
 .green {
