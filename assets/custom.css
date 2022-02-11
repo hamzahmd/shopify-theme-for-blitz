@@ -124,6 +124,7 @@
   left: 0;
   background: #FFF;
   padding: 10px 20px;
+  opacity: .95;
 }
 
 .collection-image img {
