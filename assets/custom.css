@@ -1,13 +1,15 @@
 .product__price.on-sale {
   color: rgb(28, 29, 29);
-  font-size: 1.6em;
+  font-size: 22px;
   font-weight: 600;
+  margin-right: 0;
 }
 
 .product__price--compare {
-  font-size: 1.2em;
+  font-size: 18px;
   font-weight: 600;
   color: #999;
+  margin-right: 0;
 }
 
 .subscription_table {
@@ -191,30 +193,34 @@
 }
 
 .product__price-savings {
-  background: rgb(186, 68, 68);
-  color: #FFF;
-  padding: 7px 20px;
-  line-height: 0;
-  border-radius: 30px;
-  text-transform: uppercase;
-}
-
-@media only screen and (max-width: 768px) {
-  .scrollable-grid--small .grid-item {
-    flex: 0 0 85%;
-  }
-
-  .header-section {
-    padding-bottom: 10px;
-  }
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 18px!important;
+  color: #FFFFFF!important;
+  background: #FA9279;
+  border-radius: 90px;
+  padding: 5px 15px;
+  margin-bottom: 0!important;
+  display: inline-block;
+  transform: translateY(-5px);
 }
 
 .product-block--price .sales-points {
   float: right;
   color: #54c63a;
-  margin-top: 14px;
   text-transform: capitalize;
-  font-size: 16px;
+  letter-spacing: 0;
+  margin-top: 5px;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.product-block--price .sales-points .sales-point .icon {
+  margin-right: 2px;
+  margin-top: -1px;
 }
 
 .green {
@@ -241,4 +247,28 @@
 
 .coupon_code_badge span {
   font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .scrollable-grid--small .grid-item {
+    flex: 0 0 85%;
+  }
+
+  .header-section {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .product__price.on-sale {
+    font-size: 18px;
+  }
+  
+  .product__price--compare {
+    font-size: 16px;
+  }
+
+  .product__price-savings {
+    transform: translateY(-2px);
+  }
 }

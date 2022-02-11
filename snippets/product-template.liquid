@@ -166,6 +166,15 @@
                         {%- if current_variant.compare_at_price > current_variant.price -%}
                           {%- assign hide_sale_price = false -%}
                         {%- endif -%}
+                        
+                        <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
+                          <span data-compare-price class="product__price product__price--compare">
+                            {%- if current_variant.compare_at_price > current_variant.price -%}
+                              {%- render 'price' with current_variant.compare_at_price -%}
+                            {%- endif -%}
+                          </span>
+                        </span>
+                        <span data-compare-price-a11y class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
 
                         <span data-product-price
                           class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
@@ -182,14 +191,6 @@
                           aria-hidden="{{ hide_sale_price }}">
                             {{ 'products.general.regular_price' | t }}
                         </span>
-                        <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
-                          <span data-compare-price class="product__price product__price--compare">
-                            {%- if current_variant.compare_at_price > current_variant.price -%}
-                              {%- render 'price' with current_variant.compare_at_price -%}
-                            {%- endif -%}
-                          </span>
-                        </span>
-                        <span data-compare-price-a11y class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
                       {%- else -%}
                         <span id="PriceA11y-{{ section_id }}" class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
                       {%- endif -%}
