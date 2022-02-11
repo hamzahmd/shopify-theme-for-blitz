@@ -8183,7 +8183,7 @@ lazySizesConfig.expFactor = 4;
         var paymentWrapperPositionHandler = document.querySelector(this.selectors.paymentWrapperPositionHandler);
 
         if(window.innerWidth < 768) {
-          if(paymentWrapperPositionHandler.offsetTop < window.scrollY + window.innerHeight - paymentWrapper.offsetHeight) {
+          if(paymentWrapperPositionHandler.offsetTop < window.scrollY - paymentWrapper.offsetHeight) {
             paymentWrapper.classList.add("sticky");
           }
           else {
