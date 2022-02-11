@@ -7155,6 +7155,7 @@ lazySizesConfig.expFactor = 4;
         window.on('quickadd:loaded:' + this.sectionId, this.initQuickAddForm.bind(this));
 
         // Sticky Add to cart Event Define
+        this.paymentWrapperHeight = 0;
         window.addEventListener('scroll', this.adjustPaymentWrapperPosition.bind(this));
       },
   
@@ -8183,13 +8184,16 @@ lazySizesConfig.expFactor = 4;
         var paymentWrapperPositionHandler = document.querySelector(this.selectors.paymentWrapperPositionHandler);
 
         if(window.innerWidth < 768) {
-          if(paymentWrapperPositionHandler.offsetTop < window.scrollY - paymentWrapper.offsetHeight) {
+          if(this.paymentWrapperHeight <= 0) {
+            this.paymentWrapperHeight = paymentWrapper.offsetHeight;
+            paymentWrapperPositionHandler.style.height = this.paymentWrapperHeight + "px";
+          }
+          
+          if(paymentWrapperPositionHandler.offsetTop < window.scrollY - this.paymentWrapperHeight) {
             paymentWrapper.classList.add("sticky");
-            paymentWrapperPositionHandler.style.height = paymentWrapper.offsetHeight + "px";
           }
           else {
             paymentWrapper.classList.remove("sticky");
-            paymentWrapperPositionHandler.style.height = 0;
           }
         }
         else {

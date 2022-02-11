@@ -6,42 +6,43 @@
     endif
   -%}
 
-  <div class='payment-wrapper-position'></div>
-  <div class="payment-wrapper">
-  {%- if enable_dynamic_buttons -%}
-    <div class="payment-buttons">
-  {%- endif -%}
-
-    {%- liquid
-      assign default_text = 'products.product.add_to_cart' | t
-      assign button_text = 'products.product.add_to_cart' | t
-      if template == 'product.preorder'
-        assign default_text = 'products.product.preorder' | t
-        assign button_text = 'products.product.preorder' | t
-      endif
-      unless current_variant.available
-        assign button_text = 'products.product.sold_out' | t
-      endunless
-    -%}
-
-    <button
-      {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
-      name="add"
-      data-add-to-cart
-      class="btn btn--full add-to-cart{% if enable_dynamic_buttons and product.selling_plan_groups == empty %} btn--secondary{% endif %}"
-      {% unless current_variant.available %} disabled="disabled"{% endunless %}>
-      <span data-add-to-cart-text data-default-text="{{ default_text }}">
-        {{ button_text }}
-      </span>
-    </button>
-
+  <div class='payment-wrapper-position'>
+    <div class="payment-wrapper">
     {%- if enable_dynamic_buttons -%}
-      {{ form | payment_button }}
+      <div class="payment-buttons">
     {%- endif -%}
-
-  {%- if enable_dynamic_buttons -%}
+  
+      {%- liquid
+        assign default_text = 'products.product.add_to_cart' | t
+        assign button_text = 'products.product.add_to_cart' | t
+        if template == 'product.preorder'
+          assign default_text = 'products.product.preorder' | t
+          assign button_text = 'products.product.preorder' | t
+        endif
+        unless current_variant.available
+          assign button_text = 'products.product.sold_out' | t
+        endunless
+      -%}
+  
+      <button
+        {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
+        name="add"
+        data-add-to-cart
+        class="btn btn--full add-to-cart{% if enable_dynamic_buttons and product.selling_plan_groups == empty %} btn--secondary{% endif %}"
+        {% unless current_variant.available %} disabled="disabled"{% endunless %}>
+        <span data-add-to-cart-text data-default-text="{{ default_text }}">
+          {{ button_text }}
+        </span>
+      </button>
+  
+      {%- if enable_dynamic_buttons -%}
+        {{ form | payment_button }}
+      {%- endif -%}
+  
+    {%- if enable_dynamic_buttons -%}
+      </div>
+    {%- endif -%}
     </div>
-  {%- endif -%}
   </div>
 
   <div class="shopify-payment-terms product__policies">{{ form | payment_terms }}</div>
