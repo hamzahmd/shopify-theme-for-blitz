@@ -1,7 +1,8 @@
 {
   "sections": {
     "main": { "type": "main-cart", "settings": {} },
-    "recently-viewed": { "type": "recently-viewed", "settings": {} }
+    "recently-viewed": { "type": "recently-viewed", "settings": {} },
+    "timer": { "type": "timer", "setting": {} }
   },
-  "order": ["main", "recently-viewed"]
+  "order": ["timer", "main", "recently-viewed"]
 }
