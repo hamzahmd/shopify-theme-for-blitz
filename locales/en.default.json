@@ -27,7 +27,7 @@
       "signup_form_success": "We will send you an email when we open!",
       "admin_link_html": "Store owner? <a href=\"\/admin\" class=\"text-link\">Log in here<\/a>",
       "password_link": "Password",
-      "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
+      "powered_by_shopify_html": " "
     },
     "breadcrumbs": {
       "home": "Home",
@@ -127,7 +127,7 @@
       "subtotal": "Subtotal",
       "discounts": "Discounts",
       "savings_html": "You save {{ saved_amount }}",
-      "shipping_at_checkout": "Shipping, taxes, and discount codes calculated at checkout.",
+      "shipping_at_checkout": " ",
       "update": "Update cart",
       "checkout": "Check out",
       "empty": "Your cart is currently empty.",
@@ -314,7 +314,7 @@
     "general": {
       "color_swatch_trigger": "Color",
       "save_html": "Save {{ saved_amount }}",
-      "save_percent_html": "{{ saved_amount }} off",
+      "save_percent_html": "{{ saved_amount }} OFF",
       "collection_return": "Back to {{ collection }}",
       "next_product": "Next: {{ title }}",
       "sale": "Sale",
@@ -346,9 +346,10 @@
       "view_in_space": "View in your space",
       "view_in_space_label": "View in your space, loads item in augmented reality window",
       "freeshipping_USA": "Free Shipping within USA",
-      "volumn_discount": {
+      "shipping_estimate_html": "Arrives by <u class='red'><strong>{{due_date1}} - {{due_date2}}</strong></u> if you order today.",
+      "volume_discount": {
         "any_2_items": "Any 2 items",
-        "any_3_items": "Any 3 items",
+        "any_3_items": "Any 3+ items",
         "off_5_percent_html": "Get <strong class='red'>5%<\/strong> off",
         "off_10_percent_html": "Get <strong class='red'>10%<\/strong> off",
         "buy_more_save_more": "Buy more save more!"
@@ -357,7 +358,7 @@
         "bestseller": "Bestseller",
         "freeshipping": "Free Shipping",
         "frequent": "Hurry! We sell out frequently",
-        "coupon_html": "<span>Get an extra {{discount_amount}} off! Use code: <span class='green'>{{coupon_code}}</span></span><small>(enter code at checkout)<\/small>"
+        "coupon_html": "<span>Get an extra {{discount_amount}} off! Use code: <span class='green'>{{coupon_code}}<\/span><\/span><small>(enter code at checkout)<\/small>"
       }
     }
   },
@@ -386,5 +387,10 @@
   },
   "date_formats": {
     "month_day_year": "%b %d, %Y"
+  },
+  "shopify": {
+    "links": {
+      "powered_by_shopify": " "
+    }
   }
 }

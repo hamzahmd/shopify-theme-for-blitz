@@ -254,14 +254,14 @@
         <div class="grid-item__meta-secondary">
           <div class="grid-product__price">
             {%- if product.price_varies -%}
-              <span class="grid-product__price--current red">
+              <span class="grid-product__price--current {% if on_sale and product.available %} red{% endif %}">
                 {%- render 'price-varies', price: product.price_min -%}
               </span>
             {%- else -%}
               {%- if on_sale -%}
                 <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
               {%- endif -%}
-              <span class="grid-product__price--current red">
+              <span class="grid-product__price--current {% if on_sale and product.available %} red{% endif %}">
                 {%- render 'price' with product.price -%}
               </span>
             {%- endif -%}
@@ -277,9 +277,9 @@
                 {%- else -%}
                   {%- capture saved_amount -%}{{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}%{%- endcapture -%}
                 {%- endif -%}
-                <span class="grid-product__price--savings">
-                  {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
-                </span>
+                {% comment %}<span class="grid-product__price--savings">{% endcomment %}
+                  {% comment %}{{ 'products.general.save_html' | t: saved_amount: saved_amount }}{% endcomment %}
+                {% comment %}</span>{% endcomment %}
               {%- endif -%}
             {%- endif -%}
 
@@ -301,8 +301,8 @@
           </div>
 
           {%- if settings.enable_product_reviews -%}
-            <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
-          {%- endif -%}
+			<div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div>
+		  {%- endif -%}
         </div>
       </div>
     </a>

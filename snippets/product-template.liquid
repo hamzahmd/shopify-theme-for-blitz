@@ -127,22 +127,21 @@
                   {%- when 'tab' -%}
                     <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
                       {% assign tab_id = block.id | append: product.id %}
-                      {% if block.settings.title contains 'Shipping information' %}
-                        {% assign has_delivery_estimate = 0 %}
+                        {% assign has_delivery_estimate = false %}
                         {% for col in product.collections %}
-                          {% if col.metafields.my_fields.deliver_period != blank %}
-                            {% assign has_delivery_estimate = 1 %}
-                            {% assign delivery_period = col.metafields.my_fields.deliver_period | split: '~' %}
+                          {% if col.metafields.giftslab.delivery_period != blank %}
+                            {% assign has_delivery_estimate = true %}
+                            {% assign delivery_period = col.metafields.giftslab.delivery_period | split: '~' %}
                             {% assign plus_min = delivery_period[0] | times: 24 | times: 3600 %}
                             {% assign plus_max = delivery_period[1] | times: 24 | times: 3600 %}
                             {% assign due_date1 = "now" | date: "%s" | plus: plus_min | date: "%b %d" %}
                             {% assign due_date2 = "now" | date: "%s" | plus: plus_max | date: "%b %d" %}
                           {% endif %}
                         {% endfor %}
-                      {% endif %}
                       {% capture tab_content %}
-                        {% if block.settings.title contains 'Shipping information' and has_delivery_estimate == 1 %}
-                          <img src="https://cdn.shopify.com/s/files/1/0543/4549/8809/files/shipping_25x.png" style="transform: translateY(3px);" /> Arrives by <u class='red'><strong>{{due_date1}} - {{due_date2}}</strong></u> if you order today. </p>
+                        {% if block.settings.show_shipping_estimate %}
+							<img src="{{ 'truck-fast.svg' | asset_url }}" style="width: 20px;">
+							{{'products.product.shipping_estimate_html' | t: due_date1: due_date1, due_date2: due_date2}} </p>
                         {% endif %}
                         {{ block.settings.content }}
                         {{ block.settings.page.content }}
@@ -155,7 +154,7 @@
                       {%- render 'tab-contact', id: tab_id, block: block -%}
                     </div>
                   {%- when 'description' -%}
-                    <div class="product-block{% if block.settings.is_tab %} product-block--tab{% endif %}" {{ block.shopify_attributes }}>
+                    <div id="Product-Description" class="product-block{% if block.settings.is_tab %} product-block--tab{% endif %}" {{ block.shopify_attributes }}>
                       {%- assign id = block.id | append: product.id -%}
                       {%- render 'product-description', id: id, product: product, is_tab: block.settings.is_tab -%}
                     </div>
@@ -166,7 +165,7 @@
                         {%- if current_variant.compare_at_price > current_variant.price -%}
                           {%- assign hide_sale_price = false -%}
                         {%- endif -%}
-                        
+
                         <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
                           <span data-compare-price class="product__price product__price--compare">
                             {%- if current_variant.compare_at_price > current_variant.price -%}
@@ -374,15 +373,15 @@
                     </div>
                   {%- when 'subscription_table' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
-                      <h3 class="subscription_table-heading text-center">{{ 'products.product.volumn_discount.buy_more_save_more' | t }}</h3>
+                      <h3 class="subscription_table-heading text-center">{{ 'products.product.volume_discount.buy_more_save_more' | t }}</h3>
                       <table class="subscription_table">
                         <tr>
-                          <td>{{ 'products.product.volumn_discount.any_2_items' | t }}</td>
-                          <td>{{ 'products.product.volumn_discount.off_5_percent_html' | t }}</td>
+                          <td>{{ 'products.product.volume_discount.any_2_items' | t }}</td>
+                          <td>{{ 'products.product.volume_discount.off_5_percent_html' | t }}</td>
                         </tr>
                         <tr>
-                          <td>{{ 'products.product.volumn_discount.any_3_items' | t }}</td>
-                          <td>{{ 'products.product.volumn_discount.off_10_percent_html' | t }}</td>
+                          <td>{{ 'products.product.volume_discount.any_3_items' | t }}</td>
+                          <td>{{ 'products.product.volume_discount.off_10_percent_html' | t }}</td>
                         </tr>
                       </table>
                     </div>

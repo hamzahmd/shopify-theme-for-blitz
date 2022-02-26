@@ -1,13 +1,11 @@
 .product__price.on-sale {
   color: rgb(28, 29, 29);
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 1.8em;
   margin-right: 0;
 }
 
 .product__price--compare {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 1.4em;
   color: #999;
   margin-right: 0;
 }
@@ -50,7 +48,7 @@
   text-transform: capitalize;
   color: #1a2a47;
   border: solid 1px #1a2a47;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .badge-bestseller {
@@ -84,7 +82,7 @@
   justify-content: center;
   font-size: 16px;
   font-weight: 300;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   margin-bottom: 0;
 }
 
@@ -98,7 +96,7 @@
   margin: 0;
   display: block;
   text-align: center;
-  font-family: Avenir,sans-serif;
+  font-family: Avenir, sans-serif;
   font-style: normal;
   font-size: 15px;
   line-height: 18px;
@@ -107,7 +105,7 @@
   color: #ff5f01;
   background: #fff2eb;
   font-weight: 400;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .margin-bottom-0 {
@@ -124,9 +122,9 @@
   width: 100%;
   z-index: 100;
   left: 0;
-  background: #FFF;
+  background: #fff;
   padding: 10px 20px;
-  opacity: .95;
+  opacity: 0.95;
 }
 
 .collection-image img {
@@ -140,13 +138,13 @@
 
 .section-text-columns .h3.rte--block {
   font-size: 18px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   margin-top: 20px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .section-text-columns .rte--block p {
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-style: italic;
 }
 
@@ -170,7 +168,7 @@
   }
 }
 
-.mobile-nav-trigger[aria-controls="MobileNav"] {
+.mobile-nav-trigger[aria-controls='MobileNav'] {
   position: absolute;
   left: 10px;
 }
@@ -185,11 +183,7 @@
 }
 
 .hide {
-  display:none !important;
-}
-
-.product-single__title {
-  margin-bottom: 20px;
+  display: none !important;
 }
 
 .product__price-savings {
@@ -197,12 +191,12 @@
   font-style: normal;
   font-weight: 800;
   font-size: 12px;
-  line-height: 18px!important;
-  color: #FFFFFF!important;
-  background: #FA9279;
+  line-height: 18px !important;
+  color: #ffffff !important;
+  background: #ba4443;
   border-radius: 90px;
-  padding: 5px 15px;
-  margin-bottom: 0!important;
+  padding: 2px 8px;
+  margin-bottom: 0 !important;
   display: inline-block;
   transform: translateY(-5px);
 }
@@ -212,9 +206,9 @@
   color: #54c63a;
   text-transform: capitalize;
   letter-spacing: 0;
-  margin-top: 5px;
+  margin-top: 16px;
   font-style: normal;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 22px;
 }
 
@@ -236,7 +230,7 @@
 }
 
 .coupon_code_badge:before {
-  content: "";
+  content: '';
   border: dashed 2px;
   position: absolute;
   left: 6px;
@@ -261,14 +255,77 @@
 
 @media screen and (max-width: 550px) {
   .product__price.on-sale {
-    font-size: 18px;
+    font-size: 1.6em;
   }
-  
+
   .product__price--compare {
-    font-size: 16px;
+    font-size: 1.2em;
   }
 
   .product__price-savings {
     transform: translateY(-2px);
+    font-size: 10px;
   }
+
+  .sales-points {
+    margin-top: 12px !important;
+  }
+}
+
+.product-single__header {
+  margin-bottom: 0px;
+}
+
+button.add-to-cart {
+  background: #ffd814;
+  border-color: #fcd200;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 0 rgb(213 217 217 / 50%);
+  color: black;
+  font-weight: 600;
+}
+
+button.add-to-cart:hover {
+  background: #f7ca00;
+  color: black;
+}
+
+.grid-product__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.product-thumb__arrow-left-button {
+  background-color: #ffffff;
+  box-shadow: -5px 0px 5px rgb(0 0 0 / 10%);
+  padding: 12px 12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: calc(50% - 20px);
+  cursor: pointer;
+}
+
+.product-thumb__arrow-right-button {
+  background-color: #ffffff;
+  box-shadow: 5px 0px 5px rgb(0 0 0 / 10%);
+  padding: 12px 12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 20px);
+  cursor: pointer;
 }

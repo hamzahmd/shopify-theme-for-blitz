@@ -947,7 +947,7 @@ html[dir=rtl] .grid--center .grid__item{
 }
 
 [data-view=scrollable] .grid-item{
-    flex:0 0 16.66667%;
+    flex:0 0 20%;
     max-width:250px
 }
 
@@ -2995,7 +2995,7 @@ svg.icon:not(.icon--full-color) circle,svg.icon:not(.icon--full-color) ellipse,s
 
 .footer__block{
   flex:0 1 25%;
-  max-width:210px;
+  max-width:250px;
 }
 
 @media only screen and (max-width:768px){
@@ -5223,11 +5223,11 @@ html.pswp-open-in-ios,html.pswp-open-in-ios body{
 }
 
 .pswp-open-in-ios body>*{
-  display:none; 
+  display:none;
 }
 
 .pswp-open-in-ios body .pswp.pswp--open{
-  display:block; 
+  display:block;
 }
 
 .disclosure{
@@ -7037,14 +7037,16 @@ label.tag__checkbox-wrapper{
     position:relative;
     display:inline-block;
     font-weight:400;
-    padding:7px 15px 7px;
+    padding:5px 10px;
     margin:0 8px 12px 0;
     background-color:{{ settings.color_body_bg | default: "#fff" }};
     background-color:var(--colorBody);
     box-shadow:0 0 0 1px {{ settings.color_borders | default:"#1c1d1d" }};
     box-shadow:0 0 0 1px var(--colorBorder);
     border-radius:1px;
-    overflow:hidden
+    overflow:hidden;
+	border-radius: 10px;
+	text-transform: uppercase;
   }
 
 [data-center-text=true] .variant-input-wrap label{
@@ -9569,7 +9571,7 @@ iframe.zoid-component-frame{
 }
 
 .product-single__meta{
-  padding-top:0;
+  padding-top:35px;
   padding-left:45px
 }
 

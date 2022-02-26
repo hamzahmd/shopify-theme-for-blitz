@@ -12,7 +12,7 @@
     },
     "404": {
       "title": "404 Seite nicht gefunden",
-      "subtext_html": "Die von Ihnen angeforderte Seite existiert nicht. Klicken Sie <a href='{{ url }}'>hier</a>, um den Einkauf fortzusetzen."
+      "subtext_html": "Die von Ihnen angeforderte Seite existiert nicht. Klicken Sie <a href='{{ url }}'>hier<\/a>, um den Einkauf fortzusetzen."
     },
     "pagination": {
       "previous": "Zurück",
@@ -25,7 +25,7 @@
       "login_form_submit": "Betreten",
       "signup_form_email_label": "E-Mail",
       "signup_form_success": "Wir senden Ihnen eine E-Mail, kurz bevor wir eröffnen!",
-      "admin_link_html": "Sind Sie der Geschäftsinhaber? <a href=\"/admin\" class=\"text-link\">Melden Sie sich hier an</a>",
+      "admin_link_html": "Sind Sie der Geschäftsinhaber? <a href=\"\/admin\" class=\"text-link\">Melden Sie sich hier an<\/a>",
       "password_link": "Passwort",
       "powered_by_shopify_html": "Dieser Shop wird mit Hilfe von {{ shopify }} betrieben werden"
     },
@@ -84,8 +84,8 @@
       "get_directions": "Richtungen",
       "address_error": "Kann die Adresse nicht finden",
       "address_no_results": "Keine Ergebnisse für diese Adresse",
-      "address_query_limit_html": "Sie haben die Google- API-Nutzungsgrenze überschritten. Betrachten wir zu einem <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium-Paket</a> zu aktualisieren.",
-      "auth_error_html": "Es gab ein Problem bei Google Maps Konto zu authentifizieren. Erstellen und die <a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\">JavaScript- API</a> und <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-key\">Geocoding API</a> -Berechtigungen der App aktivieren."
+      "address_query_limit_html": "Sie haben die Google- API-Nutzungsgrenze überschritten. Betrachten wir zu einem <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium-Paket<\/a> zu aktualisieren.",
+      "auth_error_html": "Es gab ein Problem bei Google Maps Konto zu authentifizieren. Erstellen und die <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">JavaScript- API<\/a> und <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">Geocoding API<\/a> -Berechtigungen der App aktivieren."
     },
     "slideshow": {
       "play_slideshow": "Diashow abspielen",
@@ -127,7 +127,7 @@
       "subtotal": "Zwischensumme",
       "discounts": "Rabatte",
       "savings_html": "Sparen {{ saved_amount }}",
-      "shipping_at_checkout": "Rabattcodes, Versandkosten und Steuern werden bei der Bezahlung berechnet.",
+      "shipping_at_checkout": "Rabattcodes werden bei der Bezahlung berechnet.",
       "update": "Einkaufswagen aktualisieren",
       "checkout": "Zur Kasse",
       "empty": "Ihr Einkaufswagen ist im Moment leer.",
@@ -136,7 +136,7 @@
       "reduce_quantity": "Artikelmenge um eins reduzieren",
       "increase_quantity": "Artikelmenge um eins erhöhen",
       "terms": "Ich stimme den Nutzungsbedingungen zu",
-      "terms_html": "Ich stimme den <a href='{{ url }}' target='_blank'>Nutzungsbedingungen</a> zu",
+      "terms_html": "Ich stimme den <a href='{{ url }}' target='_blank'>Nutzungsbedingungen<\/a> zu",
       "terms_confirm": "Sie müssen den Verkaufsbedingungen zustimmen, um auszuchecken",
       "recommended_title": "Geht mit"
     },
@@ -319,20 +319,24 @@
       "sale": "Reduziert",
       "sale_price": "Sonderpreis",
       "regular_price": "Normaler Preis",
-      "from_text_html": "<span>Von</span> {{ price }}",
+      "from_text_html": "<span>Von<\/span> {{ price }}",
       "quick_shop": "Schnellkauf",
       "more_from_html": "Mehr von {{ link }}",
       "recent_products": "Zuletzt Angesehen",
-      "reviews": "Rezensionen"
+      "reviews": "Rezensionen",
+      "save_percent_html": "{{ saved_amount }} Rabbat"
     },
     "product": {
       "description": "Beschreibung",
       "in_stock_label": "Auf Lager",
-      "stock_label": "{{ count }} auf Lager",
+      "stock_label": {
+        "one": "",
+        "other": ""
+      },
       "sold_out": "Ausverkauft",
       "unavailable": "Nicht verfügbar",
       "quantity": "Menge",
-      "add_to_cart": "In den Einkaufswagen legen",
+      "add_to_cart": "In meinen Warenkorb",
       "preorder": "Vorbestellung",
       "include_taxes": "inkl. MwSt.",
       "shipping_policy_html": "zzgl. <a href='{{ link }}'>Versandkosten<\/a>",
@@ -340,11 +344,26 @@
       "will_be_in_stock_after": "Wird nach dem {{ date }} auf Lager sein",
       "waiting_for_stock": "Inventar auf dem Weg",
       "view_in_space": "In Ihrem Bereich ansehen",
-      "view_in_space_label": "„Ansicht in Ihrem Raum“ lädt den Artikel im Augmented-Reality-Fenster"
+      "view_in_space_label": "„Ansicht in Ihrem Raum“ lädt den Artikel im Augmented-Reality-Fenster",
+      "freeshipping_USA": "Kostenloser Versand",
+      "shipping_estimate_html": "Kommt bis zum <u class='red'><strong>{{due_date1}} - {{due_date2}}<\/strong><\/u> an, wenn du heute bestellst.",
+      "volume_discount": {
+        "any_2_items": "Beliebige 2 Artikel",
+        "any_3_items": "Beliebige 3+ Artikel",
+        "off_5_percent_html": "Erhalte <strong class='red'>5%<\/strong> Rabatt",
+        "off_10_percent_html": "Erhalte <strong class='red'>10%<\/strong> Rabatt",
+        "buy_more_save_more": "Mehr kaufen, mehr sparen!"
+      },
+      "badge": {
+        "bestseller": "Bestseller",
+        "freeshipping": "Kostenloser Versand",
+        "frequent": "",
+        "coupon_html": ""
+      }
     }
   },
-  "store_availability":{
-    "general":{
+  "store_availability": {
+    "general": {
       "view_store_info": "Ansicht speichern Informationen",
       "check_other_stores": "Prüfen Sie die Verfügbarkeit von anderen Shops",
       "pick_up_available": "Pickup verfügbar",
@@ -366,7 +385,7 @@
       "add_to_apple_wallet": "Hinzufügen zu Apple Wallet"
     }
   },
-  "date_formats":{
+  "date_formats": {
     "month_day_year": "%B %d, %Y"
   }
 }

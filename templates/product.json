@@ -3,13 +3,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "price": {
-          "type": "price",
+        "loox-rating": {
+          "type": "shopify:\/\/apps\/loox-photo-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
           }
         },
-        "loox-rating": {
-          "type": "shopify:\/\/apps\/loox-photo-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+        "price": {
+          "type": "price",
           "settings": {
           }
         },
@@ -23,7 +23,6 @@
         },
         "sales_point3": {
           "type": "sales_point",
-          "disabled": true,
           "settings": {
             "icon": "checkmark",
             "text": "Unique, One-of-a-kind gift"
@@ -31,7 +30,6 @@
         },
         "sales_point4": {
           "type": "sales_point",
-          "disabled": true,
           "settings": {
             "icon": "package",
             "text": "Made in USA"
@@ -39,10 +37,9 @@
         },
         "sales_point": {
           "type": "sales_point",
-          "disabled": true,
           "settings": {
-            "icon": "globe",
-            "text": "Free worldwide shipping"
+            "icon": "truck",
+            "text": "Free Shipping"
           }
         },
         "buy_buttons": {
@@ -54,6 +51,7 @@
         },
         "e03a1256-b1e2-4295-9835-83a4e55f9ed7": {
           "type": "coupon_code_badge",
+          "disabled": true,
           "settings": {
             "discount_amount": "15%",
             "coupon_code": "ROSE"
@@ -66,11 +64,13 @@
         },
         "da41f6e1-971b-427c-bb9e-e9f3c8634d42": {
           "type": "freeshipping",
+          "disabled": true,
           "settings": {
           }
         },
         "a013c8a9-47e3-41ef-aaf0-b347c860a83e": {
           "type": "frequent_badge",
+          "disabled": true,
           "settings": {
           }
         },
@@ -90,13 +90,24 @@
           "settings": {
             "title": "Shipping information",
             "content": "",
-            "page": ""
+            "page": "",
+            "show_shipping_estimate": true
+          }
+        },
+        "5b813c8e-aa57-4c19-a71a-91f6330d471b": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Message",
+            "content": "<p><em>{{ product.metafields.giftslab.product_text | metafield_tag }}<\/em><\/p>",
+            "page": "",
+            "show_shipping_estimate": true
           }
         }
       },
       "block_order": [
-        "price",
         "loox-rating",
+        "price",
         "variant_picker",
         "sales_point3",
         "sales_point4",
@@ -108,16 +119,17 @@
         "a013c8a9-47e3-41ef-aaf0-b347c860a83e",
         "e79891d9-c654-4ab2-b646-1d0d591d3942",
         "14197c06-9d8d-4b8a-ad04-d820e5375ca4",
-        "1b05ed06-fec1-49de-b112-8a5aa78f541a"
+        "1b05ed06-fec1-49de-b112-8a5aa78f541a",
+        "5b813c8e-aa57-4c19-a71a-91f6330d471b"
       ],
       "settings": {
         "sku_enable": false,
         "image_position": "left",
         "image_container_size": "medium",
-        "product_image_size": "natural",
-        "product_zoom_enable": true,
+        "product_image_size": "square",
+        "product_zoom_enable": false,
         "thumbnail_position": "below",
-        "thumbnail_arrows": false,
+        "thumbnail_arrows": true,
         "mobile_layout": "full",
         "enable_video_looping": true,
         "product_video_style": "muted"
@@ -175,7 +187,7 @@
         "854d7685-1be7-47cc-91cd-a9e87f33b16d": {
           "type": "shopify:\/\/apps\/loox-photo-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
-            "only_photos": false,
+            "only_photos": true,
             "aggregated": false,
             "hide_thumbnails": false,
             "maxwidth": 1080
@@ -186,12 +198,13 @@
         "854d7685-1be7-47cc-91cd-a9e87f33b16d"
       ],
       "settings": {
-        "full_width": false,
-        "space_around": true
+        "full_width": true,
+        "space_around": false
       }
     },
     "1644479565b2ad8225": {
       "type": "faq",
+      "disabled": true,
       "blocks": {
         "1644479565b24a8d30-0": {
           "type": "question",
@@ -252,8 +265,6 @@
         "loox-product-reviews"
       ],
       "settings": {
-        "full_width": false,
-        "space_around": true
       }
     }
   },

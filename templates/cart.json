@@ -1,8 +1,34 @@
 {
   "sections": {
-    "main": { "type": "main-cart", "settings": {} },
-    "recently-viewed": { "type": "recently-viewed", "settings": {} },
-    "timer": { "type": "timer", "setting": {} }
+    "main": {
+      "type": "main-cart",
+      "settings": {}
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {}
+    },
+    "16457974317615a2a3": {
+      "type": "apps",
+      "blocks": {
+        "d5a101f6-83e7-4ae1-a852-8ffb5ecc62ae": {
+          "type": "shopify://apps/loox-photo-reviews/blocks/loox-agg-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "",
+            "aggregated": true,
+            "data-limit": 20,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": ["d5a101f6-83e7-4ae1-a852-8ffb5ecc62ae"],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
   },
-  "order": ["timer", "main", "recently-viewed"]
+  "order": ["main", "recently-viewed", "16457974317615a2a3"]
 }
